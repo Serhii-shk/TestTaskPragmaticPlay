@@ -1,1 +1,1 @@
-# udemySeleniumCourse
+# Selenide Example Project

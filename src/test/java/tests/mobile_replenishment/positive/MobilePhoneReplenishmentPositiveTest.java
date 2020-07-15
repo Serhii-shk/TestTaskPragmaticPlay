@@ -20,7 +20,7 @@ import static constants.Constants.TestDataForMobileReplenishment.*;
 @ExtendWith(Listener.class)
 @Execution(ExecutionMode.CONCURRENT)
 public class MobilePhoneReplenishmentPositiveTest extends BaseTest {
-
+//
 	@Test
 	@DisplayName("Public session, non-client, replenishment of mobile numbers for the minimum amount")
 	void checkMinimumReplenishmentAmount() {

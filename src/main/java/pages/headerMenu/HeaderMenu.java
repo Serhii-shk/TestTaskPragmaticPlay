@@ -12,7 +12,7 @@ public class HeaderMenu extends BasePage {
     private final SelenideElement companyItem = $x("//li[@id='menu-item-57201']/a[text()='Company']");
     private final SelenideElement newsItem = $x("//li[@id='menu-item-9841']/a[text()='News']");
     private final SelenideElement contactItem = $x("//li[@id='menu-item-1820']/a[text()='Contact']");
-    private final SelenideElement slotsItem = $x("//li[@id='menu-item-5231']/a[text()='Slots']");
+    private final SelenideElement liveCasinoItem = $x("//li[@id='menu-item-5230']/a[text()='Live Casino']");
 
     /** Clicking a Product Menu item on header */
     public HeaderMenu clickOnProductMenu() {

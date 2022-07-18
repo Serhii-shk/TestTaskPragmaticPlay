@@ -9,6 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class BasePage {
 
 	private final SelenideElement authWidgetP24New = $x("//iframe[starts-with(@src,'https://login-widget')]");
+
 	/**
 	 * A method for navigating to a specific URL
 	 */
@@ -33,7 +34,12 @@ public class BasePage {
 		authWidgetP24New.shouldBe(Condition.visible);
 	}
 
+	/** Check the text on page */
 	public void checkMessage(String message){
 		$(byText(message)).shouldBe(Condition.visible);
 	}
+
+
+
+
 }

@@ -9,6 +9,7 @@ public class CommonActions {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(CommonActions.class);
 
+	/** Clear browser cookies and storage */
 	public static void clearBrowserCookiesAndStorage() {
 		if(CLEAR_COOKIES) {
 			try {

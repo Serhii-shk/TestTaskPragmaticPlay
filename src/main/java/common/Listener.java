@@ -33,6 +33,7 @@ public class Listener implements TestWatcher, BeforeAllCallback, AfterEachCallba
         attachScreenshotToAllure();
     }
 
+    /** Attach screenshots to Allure */
     @Attachment(value = "Attachment Screenshot", type = "image/png")
     public byte[] attachScreenshotToAllure() {
     	if(WebDriverRunner.hasWebDriverStarted())

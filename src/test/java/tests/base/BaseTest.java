@@ -1,13 +1,13 @@
 package tests.base;
 
-import common.CommonActions;
 import common.Config;
-import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pages.AgeCheckPopup;
+import pages.Cookie;
 import pages.base.BasePage;
-import pages.loans.CarLoans;
-import pages.telecommunication.MobilePhoneReplenishment;
+import pages.headerMenu.HeaderMenu;
+
 import java.io.File;
 import java.time.LocalTime;
 import java.util.Objects;
@@ -15,8 +15,9 @@ import java.util.Objects;
 public class BaseTest {
 
 	protected BasePage basePage = new BasePage();
-	protected CarLoans carLoans = new CarLoans();
-	protected MobilePhoneReplenishment mobilePhoneReplenishment = new MobilePhoneReplenishment();
+	protected HeaderMenu headerMenu = new HeaderMenu();
+	protected AgeCheckPopup ageCheckPopup = new AgeCheckPopup();
+	protected Cookie cookie = new Cookie();
 	private static final Logger LOGGER = LoggerFactory.getLogger(BaseTest.class);
 
 	/**

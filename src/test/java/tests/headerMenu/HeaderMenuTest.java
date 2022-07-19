@@ -4,6 +4,7 @@ import common.Listener;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Link;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -28,10 +29,26 @@ public class HeaderMenuTest extends BaseTest {
                 .ageCheckConfirming();
         cookie
                 .clickAcceptAllButton();
+
+        thenItemAssert
+                .checkingThatTheElementIsOrange(headerMenu.getColorHomeItem());
         headerMenu
-                .clickOnProductMenu();
+                .hoverHomeItem()
+                .getColorHomeItem();
+        thenItemAssert
+                .checkingThatTheElementIsWhite(headerMenu.getColorHomeItem());
+
+        headerMenu
+                .clickProductsMenuItem()
+                .hoverHomeItem();
+        thenItemAssert
+                .checkingThatTheElementIsOrange(headerMenu.getColorProductsMenuItem());
+        headerMenu
+                .hoverProductsMenuItem()
+                .getColorProductsMenuItem();
+        thenItemAssert
+                .checkingThatTheElementIsWhite(headerMenu.getColorProductsMenuItem());
 
 
     }
-
 }

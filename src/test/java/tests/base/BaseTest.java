@@ -1,5 +1,6 @@
 package tests.base;
 
+import asserts.ItemAssert;
 import common.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ public class BaseTest {
 	protected HeaderMenu headerMenu = new HeaderMenu();
 	protected AgeCheckPopup ageCheckPopup = new AgeCheckPopup();
 	protected Cookie cookie = new Cookie();
+	protected ItemAssert thenItemAssert = new ItemAssert();
 	private static final Logger LOGGER = LoggerFactory.getLogger(BaseTest.class);
 
 	/**

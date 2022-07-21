@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: tests.headerMenu.HeaderMenuTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 22.696 s <<< FAILURE! - in tests.headerMenu.HeaderMenuTest
+changingColorCompanyItemOnMouseover  Time elapsed: 13.536 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <rgb(255, 128, 14)> but was: <rgb(255, 255, 255)>
+	at tests.headerMenu.HeaderMenuTest.changingColorCompanyItemOnMouseover(HeaderMenuTest.java:93)
+
+changingColorProductsItemOnMouseover  Time elapsed: 2.223 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <rgb(255, 128, 14)> but was: <rgb(255, 255, 255)>
+	at tests.headerMenu.HeaderMenuTest.changingColorProductsItemOnMouseover(HeaderMenuTest.java:59)
+

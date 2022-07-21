@@ -3,9 +3,6 @@ package pages.bingo;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.NoSuchElementException;
 import pages.base.BasePage;
-
-import java.util.ArrayList;
-
 import static com.codeborne.selenide.Selenide.$x;
 
 public class BingoPage extends BasePage {

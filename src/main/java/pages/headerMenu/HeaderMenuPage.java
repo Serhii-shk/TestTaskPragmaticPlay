@@ -2,17 +2,12 @@ package pages.headerMenu;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import org.junit.jupiter.api.Assertions;
 import pages.base.BasePage;
+import pages.bingo.BingoPage;
 
-import java.time.Duration;
-
-import static com.codeborne.selenide.Condition.exactText;
-
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-public class HeaderMenu extends BasePage {
+public class HeaderMenuPage extends BasePage {
     private final SelenideElement homeItem = $x("//li[@id='menu-item-1185']/a[text()='Home']");
     private final SelenideElement productsMenuItem = $x("//a[text()='Products']/div[@class='arrow-menu']");
     private final SelenideElement clientHubItem = $x("//li[@id='menu-item-23582']/a[@target='_blank']");
@@ -32,7 +27,7 @@ public class HeaderMenu extends BasePage {
     public String getColorHomeItem() {
         return getColorItem(homeItem);
     }
-    public HeaderMenu hoverHomeItem() {
+    public HeaderMenuPage hoverHomeItem() {
         homeItem.shouldBe(Condition.visible).hover();
         return this;
     }
@@ -40,12 +35,12 @@ public class HeaderMenu extends BasePage {
     public String getColorProductsMenuItem() {
         return getColorItem(productsMenuItem);
     }
-    public HeaderMenu hoverProductsMenuItem() {
+    public HeaderMenuPage hoverProductsMenuItem() {
         productsMenuItem.shouldBe(Condition.visible).hover();
         return this;
     }
 
-    public HeaderMenu hoverClientHubItem() {
+    public HeaderMenuPage hoverClientHubItem() {
         clientHubItem.shouldBe(Condition.visible).hover();
         return this;
     }
@@ -53,7 +48,7 @@ public class HeaderMenu extends BasePage {
         return getColorItem(clientHubItem);
     }
 
-    public HeaderMenu hoverCompanyItem() {
+    public HeaderMenuPage hoverCompanyItem() {
         companyItem.shouldBe(Condition.visible).hover();
         return this;
     }
@@ -61,7 +56,7 @@ public class HeaderMenu extends BasePage {
         return getColorItem(companyItem);
     }
 
-    public HeaderMenu hoverNewsItem() {
+    public HeaderMenuPage hoverNewsItem() {
         newsItem.shouldBe(Condition.visible).hover();
         return this;
     }
@@ -69,7 +64,7 @@ public class HeaderMenu extends BasePage {
         return getColorItem(newsItem);
     }
 
-    public HeaderMenu hoverContactItem() {
+    public HeaderMenuPage hoverContactItem() {
         contactItem.shouldBe(Condition.visible).hover();
         return this;
     }
@@ -78,18 +73,23 @@ public class HeaderMenu extends BasePage {
     }
 
     /** Clicking a Product Menu item on header */
-    public HeaderMenu clickProductsMenuItem() {
+    public HeaderMenuPage clickProductsMenuItem() {
         productsMenuItem.shouldBe(Condition.visible).click();
         return this;
     }
-    public HeaderMenu hoverBingoItem() {
-//        actions().moveToElement(bingoItem).perform();
+    public HeaderMenuPage hoverBingoItem() {
         bingoItem.shouldBe(Condition.visible).hover();
         return this;
     }
     public String getColorBingoItem() {
         return getColorItem(bingoItem);
     }
+
+    public HeaderMenuPage clickBingoItem() {
+        bingoItem.shouldBe(Condition.visible).click();
+        return this;
+    }
+
 
 
 

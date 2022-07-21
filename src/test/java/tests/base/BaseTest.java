@@ -1,13 +1,14 @@
 package tests.base;
 
 import asserts.ItemAssert;
+import asserts.ThemeAssert;
 import common.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pages.AgeCheckPopup;
-import pages.Cookie;
+import pages.AgeCheckPopupAndCookie;
 import pages.base.BasePage;
-import pages.headerMenu.HeaderMenu;
+import pages.bingo.BingoPage;
+import pages.headerMenu.HeaderMenuPage;
 
 import java.io.File;
 import java.time.LocalTime;
@@ -16,10 +17,11 @@ import java.util.Objects;
 public class BaseTest {
 
 	protected BasePage basePage = new BasePage();
-	protected HeaderMenu headerMenu = new HeaderMenu();
-	protected AgeCheckPopup ageCheckPopup = new AgeCheckPopup();
-	protected Cookie cookie = new Cookie();
+	protected HeaderMenuPage headerMenuPage = new HeaderMenuPage();
+	protected AgeCheckPopupAndCookie ageCheckPopupAndCookie = new AgeCheckPopupAndCookie();
 	protected ItemAssert thenItemAssert = new ItemAssert();
+	protected ThemeAssert thenThemeAssert = new ThemeAssert();
+	protected BingoPage bingoPage = new BingoPage();
 	private static final Logger LOGGER = LoggerFactory.getLogger(BaseTest.class);
 
 	/**

@@ -11,8 +11,7 @@ import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import tests.base.BaseTest;
 
-import static constants.Constants.COLOR_ITEM.ITEM_ORANGE_COLOR;
-import static constants.Constants.COLOR_ITEM.ITEM_WHITE_COLOR;
+import static constants.Constants.COLOR_ITEM.*;
 import static constants.Constants.DOMAINS_URL.PRAGMATIC_PLAY_URL;
 
 @Link(name = "check-list", url = "https://docs.google.com/spreadsheets/d/1Esfb7JScop6K5Mkvm2kOZ3ya-SeVQ7f8U8qByg4tstw/edit#gid=0")
@@ -20,26 +19,26 @@ import static constants.Constants.DOMAINS_URL.PRAGMATIC_PLAY_URL;
 @Story("A positive scenario")
 @ExtendWith(Listener.class)
 @Execution(ExecutionMode.CONCURRENT)
-public class HeaderMenuTest extends BaseTest {
 
+public class HeaderMenuTest extends BaseTest {
 
     @Test
     @DisplayName("Checking if Home item on  header menu is changing color on mouseover")
     void changingColorHomeItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
-        ageCheckPopup
-                .ageCheckConfirming();
-        cookie
+
+        ageCheckPopupAndCookie
+                .ageCheckConfirming()
                 .clickAcceptAllButton();
 
         thenItemAssert
-                .checkingChangeColorElement(ITEM_ORANGE_COLOR, headerMenu.getColorHomeItem());
-        headerMenu
+                .checkingChangeColorElement(ITEM_ORANGE_COLOR, headerMenuPage.getColorHomeItem());
+        headerMenuPage
                 .hoverHomeItem()
                 .getColorHomeItem();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_WHITE_COLOR ,headerMenu.getColorHomeItem());
+                .checkingChangeColorElement(ITEM_WHITE_COLOR , headerMenuPage.getColorHomeItem());
     }
 
 
@@ -48,17 +47,16 @@ public class HeaderMenuTest extends BaseTest {
     void changingColorProductsItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
-        ageCheckPopup
-                .ageCheckConfirming();
-        cookie
+        ageCheckPopupAndCookie
+                .ageCheckConfirming()
                 .clickAcceptAllButton();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_WHITE_COLOR ,headerMenu.getColorProductsMenuItem());
-        headerMenu
+                .checkingChangeColorElement(ITEM_WHITE_COLOR, headerMenuPage.getColorProductsMenuItem());
+        headerMenuPage
                 .hoverProductsMenuItem()
                 .getColorProductsMenuItem();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_ORANGE_COLOR ,headerMenu.getColorProductsMenuItem());
+                .checkingChangeColorElement(ITEM_ORANGE_COLOR , headerMenuPage.getColorProductsMenuItem());
     }
 
     @Test
@@ -66,17 +64,16 @@ public class HeaderMenuTest extends BaseTest {
     void changingColorClientHubItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
-        ageCheckPopup
-                .ageCheckConfirming();
-        cookie
+        ageCheckPopupAndCookie
+                .ageCheckConfirming()
                 .clickAcceptAllButton();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_WHITE_COLOR ,headerMenu.getColorClientHubItem());
-        headerMenu
+                .checkingChangeColorElement(ITEM_WHITE_COLOR , headerMenuPage.getColorClientHubItem());
+        headerMenuPage
                 .hoverClientHubItem()
                 .getColorClientHubItem();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_ORANGE_COLOR ,headerMenu.getColorClientHubItem());
+                .checkingChangeColorElement(ITEM_ORANGE_COLOR , headerMenuPage.getColorClientHubItem());
     }
 
     @Test
@@ -84,17 +81,16 @@ public class HeaderMenuTest extends BaseTest {
     void changingColorCompanyItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
-        ageCheckPopup
-                .ageCheckConfirming();
-        cookie
+        ageCheckPopupAndCookie
+                .ageCheckConfirming()
                 .clickAcceptAllButton();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_WHITE_COLOR ,headerMenu.getColorCompanyItem());
-        headerMenu
+                .checkingChangeColorElement(ITEM_WHITE_COLOR , headerMenuPage.getColorCompanyItem());
+        headerMenuPage
                 .hoverCompanyItem()
                 .getColorCompanyItem();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_ORANGE_COLOR ,headerMenu.getColorCompanyItem());
+                .checkingChangeColorElement(ITEM_ORANGE_COLOR , headerMenuPage.getColorCompanyItem());
     }
 
     @Test
@@ -102,17 +98,16 @@ public class HeaderMenuTest extends BaseTest {
     void changingColorNewsItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
-        ageCheckPopup
-                .ageCheckConfirming();
-        cookie
+        ageCheckPopupAndCookie
+                .ageCheckConfirming()
                 .clickAcceptAllButton();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_WHITE_COLOR ,headerMenu.getColorNewsItem());
-        headerMenu
+                .checkingChangeColorElement(ITEM_WHITE_COLOR , headerMenuPage.getColorNewsItem());
+        headerMenuPage
                 .hoverNewsItem()
                 .getColorNewsItem();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_ORANGE_COLOR ,headerMenu.getColorNewsItem());
+                .checkingChangeColorElement(ITEM_ORANGE_COLOR , headerMenuPage.getColorNewsItem());
     }
 
     @Test
@@ -120,17 +115,16 @@ public class HeaderMenuTest extends BaseTest {
     void changingColorContactItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
-        ageCheckPopup
-                .ageCheckConfirming();
-        cookie
+        ageCheckPopupAndCookie
+                .ageCheckConfirming()
                 .clickAcceptAllButton();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_WHITE_COLOR ,headerMenu.getColorContactItem());
-        headerMenu
+                .checkingChangeColorElement(ITEM_WHITE_COLOR , headerMenuPage.getColorContactItem());
+        headerMenuPage
                 .hoverContactItem()
                 .getColorContactItem();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_ORANGE_COLOR ,headerMenu.getColorContactItem());
+                .checkingChangeColorElement(ITEM_ORANGE_COLOR , headerMenuPage.getColorContactItem());
     }
 
     @Test
@@ -138,21 +132,21 @@ public class HeaderMenuTest extends BaseTest {
     void changingColorOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
-        ageCheckPopup
-                .ageCheckConfirming();
-        cookie
+        ageCheckPopupAndCookie
+                .ageCheckConfirming()
                 .clickAcceptAllButton();
-        headerMenu
+        headerMenuPage
                 .hoverProductsMenuItem();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_WHITE_COLOR ,headerMenu.getColorBingoItem());
-        headerMenu
+                .checkingChangeColorElement(ITEM_WHITE_COLOR , headerMenuPage.getColorBingoItem());
+        headerMenuPage
                 .hoverBingoItem();
-        headerMenu
+        headerMenuPage
                 .getColorBingoItem();
         thenItemAssert
-                .checkingChangeColorElement(ITEM_ORANGE_COLOR ,headerMenu.getColorBingoItem());
-
-
+                .checkingChangeColorElement(ITEM_ORANGE_COLOR , headerMenuPage.getColorBingoItem());
     }
+
+
+
 }

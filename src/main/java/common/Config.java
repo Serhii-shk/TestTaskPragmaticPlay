@@ -10,7 +10,7 @@ public class Config {
 	/** Clean the directory with the screen before starting the build*/
 	public static boolean CLEAR_REPORTS_DIR = true;
 	/** Whether to keep the browser open after the tests*/
-	public static final boolean HOLD_BROWSER_OPEN = true;
+	public static final boolean HOLD_BROWSER_OPEN = false;
 	/** Whether to open the browser in full-screen mode*/
 	public static final boolean FULLSCREEN_MODE_BROWSER = true;
 

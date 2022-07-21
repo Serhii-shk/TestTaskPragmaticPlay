@@ -8,8 +8,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class BasePage {
 
-	private final SelenideElement authWidgetP24New = $x("//iframe[starts-with(@src,'https://login-widget')]");
-
 	/**
 	 * A method for navigating to a specific URL
 	 */
@@ -25,13 +23,6 @@ public class BasePage {
 	protected void clearAndType(SelenideElement element, String value){
 		while (!element.getAttribute("value").equals("")) element.sendKeys(Keys.BACK_SPACE);
 		element.setValue(value);
-	}
-
-	/**
-	 * Checking whether a frame for authorization
-	 */
-	public void checkIsDisplayedAuthWidget(){
-		authWidgetP24New.shouldBe(Condition.visible);
 	}
 
 	/** Check the text on page */

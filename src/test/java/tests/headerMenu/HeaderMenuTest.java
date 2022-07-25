@@ -24,7 +24,7 @@ public class HeaderMenuTest extends BaseTest {
 
     @Test
     @DisplayName("Checking if Home item on  header menu is changing color on mouseover")
-    void changingColorHomeItemOnMouseover() {
+    public void changingColorHomeItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
 
@@ -44,7 +44,7 @@ public class HeaderMenuTest extends BaseTest {
 
     @Test
     @DisplayName("Checking if Products item on  header menu is changing color on mouseover")
-    void changingColorProductsItemOnMouseover() {
+    public void changingColorProductsItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -61,7 +61,7 @@ public class HeaderMenuTest extends BaseTest {
 
     @Test
     @DisplayName("Checking if Client Hub item on  header menu is changing color on mouseover")
-    void changingColorClientHubItemOnMouseover() {
+    public void changingColorClientHubItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -78,7 +78,7 @@ public class HeaderMenuTest extends BaseTest {
 
     @Test
     @DisplayName("Checking if Company item on  header menu is changing color on mouseover")
-    void changingColorCompanyItemOnMouseover() {
+    public void changingColorCompanyItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -95,7 +95,7 @@ public class HeaderMenuTest extends BaseTest {
 
     @Test
     @DisplayName("Checking if News item on  header menu is changing color on mouseover")
-    void changingColorNewsItemOnMouseover() {
+    public void changingColorNewsItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -112,7 +112,7 @@ public class HeaderMenuTest extends BaseTest {
 
     @Test
     @DisplayName("Checking if Contact item on  header menu is changing color on mouseover")
-    void changingColorContactItemOnMouseover() {
+    public void changingColorContactItemOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -129,7 +129,7 @@ public class HeaderMenuTest extends BaseTest {
 
     @Test
     @DisplayName("Checking if Bingo option in Products menu is changing color on mouseover")
-    void changingColorOnMouseover() {
+    public void changingColorOnMouseover() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie

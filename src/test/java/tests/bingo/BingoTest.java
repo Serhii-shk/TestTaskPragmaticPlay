@@ -25,7 +25,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that there are 9 Bingo themes.")
-    void availabilityBingoThemes() {
+    public void availabilityBingoThemes() {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -42,7 +42,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme The Jackpot Room Name ")
-    void checkingLinkToContainsTheJackpotRoomName() throws InterruptedException {
+    public void checkingLinkToContainsTheJackpotRoomName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -60,7 +60,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme BingoB last Name ")
-    void checkingLinkToContainsBingoBlastName() throws InterruptedException {
+    public void checkingLinkToContainsBingoBlastName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -78,7 +78,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme Reels Room Name ")
-    void checkingLinkToContainsReelsRoomName() throws InterruptedException {
+    public void checkingLinkToContainsReelsRoomName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -96,7 +96,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme Country Roads Name ")
-    void checkingLinkToContainsCountryRoadsName() throws InterruptedException {
+    public void checkingLinkToContainsCountryRoadsName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -114,7 +114,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme Zoom Room Name ")
-    void checkingLinkToContainsZoomRoomName() throws InterruptedException {
+    public void checkingLinkToContainsZoomRoomName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -132,7 +132,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme Boombox Name ")
-    void checkingLinkToContainsBoomboxName() throws InterruptedException {
+    public void checkingLinkToContainsBoomboxName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -150,7 +150,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme Sweet Bonanza Bingo Name ")
-    void checkingLinkToContainsSweetBonanzaBingoName() throws InterruptedException {
+    public void checkingLinkToContainsSweetBonanzaBingoName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -168,7 +168,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme Snowball Blast Name ")
-    void checkingLinkToContainsSnowballBlastName() throws InterruptedException {
+    public void checkingLinkToContainsSnowballBlastName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie
@@ -186,7 +186,7 @@ public class BingoTest extends BaseTest {
 
     @Test
     @DisplayName("Checking that the link to the image contains a theme Rock N Swing Name ")
-    void checkingLinkToContainsRockNSwingName() throws InterruptedException {
+    public void checkingLinkToContainsRockNSwingName() throws InterruptedException {
         basePage
                 .goToURL(PRAGMATIC_PLAY_URL);
         ageCheckPopupAndCookie

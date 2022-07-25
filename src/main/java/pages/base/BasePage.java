@@ -7,8 +7,8 @@ public class BasePage {
 	/**
 	 * A method for navigating to a specific URL
 	 */
-    public void goToURL(String URL) {
-        open(URL);
+    public void goToURL(String url) {
+        open(url);
     }
 
 }
